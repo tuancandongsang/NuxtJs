@@ -28,7 +28,7 @@ export default {
   },
   layout(context) {
     console.log("[context user.vue]", Object.keys(context));
-    return context.isMobile ? 'mobile' : 'admin'
+    return context.isMobile ? 'mobile' : 'user'
     // console.log('userAgent', userAgent);
     // console.log('navigator', navigator);
     // return 'admin'

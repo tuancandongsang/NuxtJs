@@ -1,34 +1,35 @@
 <template>
   <div>
-    <header class="header">header user</header>
+    <header class="header">header client</header>
     <div class="container">
       <aside>
         <NuxtAside />
       </aside>
-    <nuxt />
+      <nuxt />
     </div>
-    <footer class="footer">footer user</footer>
+    <footer class="footer">footer client</footer>
   </div>
 </template>
 
 <script>
-// import client from '../pages/client.vue'
 export default {
-  // components: { client },
 
 }
 </script>
 
-<style scoped>
-.container{
+<style scoped >
+.container {
   display: flex;
 }
-aside{
+
+aside {
   margin-right: 50px;
   background-color: tan;
   padding-right: 60px;
 }
-.footer, .header{
+
+.footer,
+.header {
   background-color: antiquewhite;
   padding: 20px 0;
   font-size: 2rem;

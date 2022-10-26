@@ -1,28 +1,31 @@
 <template>
   <div>
-    <h1>client child</h1>
+    <h1>client child <b>index.vue </b></h1>
+    <div>
+      <nuxt-child />
+    </div>
     <ul>
-      <li>{{posts}}</li>
+      <li>{{ posts }}</li>
     </ul>
     <button v-on:click="handleAdd">add item</button>
-    <h3>{{name}}</h3>
+    <h3>{{ name }}</h3>
   </div>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex'
 export default {
-  computed:{
-    ...mapState({ 
+  computed: {
+    ...mapState({
       posts: state => state.post.post,
       name: state => state.name
     })
   },
-  methods:{
+  methods: {
     ...mapActions({
       'actaddPosts': 'post/actaddPosts'
     }),
-    handleAdd(){
+    handleAdd() {
       this.actaddPosts('tuancan')
     }
   }

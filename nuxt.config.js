@@ -53,8 +53,9 @@ export default {
   loading: {
     color: 'blue',   // màu thanh loadunbg
     height: '5px',  // chiều cao thanh loading
+    throttle : 0, // độ chễ chạy thanh loading
     failedColor: 'red', /// màu khi lỗi
     css: true, // css true: sử dụng css của loading. false thì sẽ là dùng của dev tạo
-    rtl: true, /// cấu trúc đoạn văn từ trái qua phải, false là phải qua trái ( arap, japan )
+    rtl: false, /// false thanh loading chạy từ trái xang phải, true thanh loading chạy phải xang trái
   }
 }

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <Tutorial/> -->
     <h1> index app</h1>
     <ul>
       <li><nuxt-link to="/custom-loading">Custom loading</nuxt-link></li>
@@ -10,13 +9,13 @@
     </ul>
     <h1>{{counter}}</h1>
     <button v-on:click="handleClick">click me</button>
-
   </div>
 </template>
 
 <script>
 import {mapState, mapActions} from 'vuex'
 export default {
+  layouts:'user',
   computed:{
     ...mapState({
       counter: state => state.counter

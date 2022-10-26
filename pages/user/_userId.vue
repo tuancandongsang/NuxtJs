@@ -1,6 +1,7 @@
 <template>
   <div>
     <h3>uderId page {{ $route.params.userId }}</h3>
+    <b> Phần này bị phá layout do có kèm thẻ script vào head()</b>
   </div>
 </template>
 
