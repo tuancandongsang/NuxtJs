@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>setting ủe</h1>
-
+    meta
   </div>
 </template>
 
@@ -13,4 +12,4 @@ export default {
 
 <style>
 
-</style>
+</style>>

@@ -122,6 +122,9 @@
     </div>
     <h2>kết hợp</h2>
     <p>Trong 1 wep có thể kết hợp SPA và MPA.</p>
+
+    
+    <button v-on:click="()=>handleBack(this.$router.go(-1))">BACK</button>
   </div>
 </template>
 

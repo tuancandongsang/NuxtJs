@@ -1,13 +1,17 @@
 <template>
   <div>
-    <header class="header">header client</header>
+    <header class="header">header blogs</header>
     <div class="container">
       <aside>
         <NuxtAside />
       </aside>
       <nuxt />
+
     </div>
-    <footer class="footer">footer client</footer>
+    <button
+            style=" padding: 8px 12px; background-color: antiquewhite; border: none; border-radius: 4px; cursor: pointer;"
+            v-on:click="() => handleBack(this.$router.go(-1))">BACK</button>
+    <footer class="footer">footer blogs</footer>
   </div>
 </template>
 

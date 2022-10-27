@@ -2,7 +2,7 @@
 const isLogin = true
 
 export default function (context) {
-    console.log('[middleware mobile]', Object.keys(context));
+    // console.log('[middleware mobile]', Object.keys(context));
     context.isMobile = false
     let userAgent = "";
     if (context.req) {

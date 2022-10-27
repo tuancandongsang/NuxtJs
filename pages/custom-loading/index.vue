@@ -47,6 +47,7 @@
     <button>
       <nuxt-link to="/">home</nuxt-link>
     </button>
+    <button v-on:click="()=>handleBack(this.$router.go(-1))">BACK</button>
   </div>
 </template>
 

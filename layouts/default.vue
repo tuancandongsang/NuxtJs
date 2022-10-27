@@ -6,8 +6,11 @@
         <NuxtAside />
       </aside>
       <nuxt />
+
     </div>
-    <notifications group="foo" />
+    <button
+      style=" padding: 8px 12px; background-color: antiquewhite; border: none; border-radius: 4px; cursor: pointer;"
+      v-on:click="() => handleBack(this.$router.go(-1))">BACK</button>
     <footer class="footer">footer defaule</footer>
   </div>
 </template>
@@ -16,7 +19,7 @@
 import NuxtAside from '../components/NuxtAside.vue';
 
 export default {
-    components: { NuxtAside }
+  components: { NuxtAside }
 }
 </script>
 

@@ -2,22 +2,47 @@
   <div>
     <h1> Sider Bar</h1>
     <ul>
-      <li><nuxt-link to="/structure">structure</nuxt-link></li>
       <li><nuxt-link to="/">SSR_CSR</nuxt-link></li>
-      <li><nuxt-link to="/routing">Routing</nuxt-link></li>
-      <li><nuxt-link to="/custom-loading">Custom loading</nuxt-link></li>
-      <li><nuxt-link to="/user">User</nuxt-link></li>
+      <li><nuxt-link to="/structure">Structure</nuxt-link></li>
+      <li><nuxt-link to="/routing">Routing vs pages</nuxt-link></li>
+      <li><nuxt-link to="/nested">Nested Pages và Validate</nuxt-link></li>
+      <li><nuxt-link to="/nuxtlink">Nuxt-link vs nuxt-child vs Nuxt</nuxt-link></li>
+      <li><nuxt-link to="/layout">Layout và Middleware</nuxt-link></li>
+      <li><nuxt-link to="/plugins">Plugins</nuxt-link></li>
+      <li><nuxt-link to="/meta">Meta Tags vs SEO</nuxt-link></li>
+
+
+
+
+
+
+
       <li><nuxt-link to="/client">client</nuxt-link></li>
       
       
       
+      <li><nuxt-link to="/custom-loading">Custom loading</nuxt-link></li>
       <li><nuxt-link to="/error">error</nuxt-link></li>
     </ul>
   </div>
 </template>
 
-<style>
-.nuxt-logo {
-  height: 180px;
+<style scoped>
+ul{
+  width: 200px;
+  list-style-type: none;
+}
+li{
+  padding: 8px 0;
+
+}
+a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+a:hover{
+  color: tomato;
 }
 </style>

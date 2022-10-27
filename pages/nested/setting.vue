@@ -1,14 +1,24 @@
 <template>
   <div>
-    <h3>uderId page {{ $route.params.userId }}</h3>
+    <h1>setting nested</h1>
+    <h2>active-class và exact-active-class trong nuxt-link </h2>
+    <p>
+      là các atribuil class của nuxt-link <br>
+      <b>active-class</b>: khớp 1 phần nếu chứa đường dẫn route có đường link được chọn <br>
+      <b>exact-active-class </b>: khớp toàn bộ nếu route có đường dẫn đó <br>
+      - như ví dụ trên ta có thể thay vào
+    </p>
+
+
     <b> Phần này bị phá layout do có kèm thẻ script vào head()</b>
+
+
   </div>
 </template>
 
 <script>
 export default {
   created() {
-    console.log(this.$route.params.userId);
   },
   data() {
     return {
