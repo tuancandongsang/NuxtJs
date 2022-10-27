@@ -10,18 +10,8 @@
       <li><nuxt-link to="/layout">Layout và Middleware</nuxt-link></li>
       <li><nuxt-link to="/plugins">Plugins</nuxt-link></li>
       <li><nuxt-link to="/meta">Meta Tags vs SEO</nuxt-link></li>
-
-
-
-
-
-
-
-      <li><nuxt-link to="/client">client</nuxt-link></li>
-      
-      
-      
       <li><nuxt-link to="/custom-loading">Custom loading</nuxt-link></li>
+      <li><nuxt-link to="/vuex">VueX</nuxt-link></li>
       <li><nuxt-link to="/error">error</nuxt-link></li>
     </ul>
   </div>

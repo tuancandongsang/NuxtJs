@@ -5,7 +5,7 @@
 <script>
 export default {
     // created() {
-    //     console.log(this.$route.params.clientId);
+    //     console.log(this.$route.params.vuex);
     // }
 }
 </script>

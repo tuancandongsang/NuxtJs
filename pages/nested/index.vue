@@ -18,8 +18,6 @@
         <img src="../../assets/filesystemrouting.png" alt="">
       </div>
     </div>
-
-
   </div>
 </template>
 

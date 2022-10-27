@@ -38,16 +38,7 @@ export default {
     // console.log('navigator', navigator);
     // return 'admin'
   },
-  head: {
-    title: 'User  page',
-    meta: [
-      {
-        hid: 'description',
-        name: 'alo',
-        content: 'user page description'
-      }
-    ],
-  }
+ 
 }
 </script>
 

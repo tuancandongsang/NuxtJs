@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>client id = {{ $route.params.clientId }}</h2>
+    <h2>client id = {{ $route.params.vuex }}</h2>
     <h1>{{ counter }}</h1>
     <button v-on:click="handleClick">click me</button>
   </div>
@@ -26,7 +26,7 @@ export default {
     }, 1000);
   },
   created() {
-    console.log(this.$route.params.clientId);
+    console.log(this.$route.params.vuex);
   },
   data() {
     return {

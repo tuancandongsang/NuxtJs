@@ -8,11 +8,7 @@
       <b>exact-active-class </b>: khớp toàn bộ nếu route có đường dẫn đó <br>
       - như ví dụ trên ta có thể thay vào
     </p>
-
-
     <b> Phần này bị phá layout do có kèm thẻ script vào head()</b>
-
-
   </div>
 </template>
 

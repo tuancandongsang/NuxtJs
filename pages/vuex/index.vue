@@ -1,32 +1,32 @@
 <template>
   <div>
-    <h1>client child <b>index.vue </b></h1>
+    <h1>vuex child <b>index.vue </b></h1>
     <ul>
       <li>
         <nuxt-link
           active-class="active"
           exact-active-class="exact"
-          to="/client"
+          to="/vuex"
         >
-          client page</nuxt-link
-        >
-      </li>
-      <li>
-        <nuxt-link
-          active-class="active"
-          exact-active-class="exact"
-          to="/client/10"
-        >
-          client id</nuxt-link
+        vuex page</nuxt-link
         >
       </li>
       <li>
         <nuxt-link
           active-class="active"
           exact-active-class="exact"
-          to="/client/10/setting"
+          to="/vuex/10"
         >
-          client setting
+        vuex id</nuxt-link
+        >
+      </li>
+      <li>
+        <nuxt-link
+          active-class="active"
+          exact-active-class="exact"
+          to="/vuex/10/setting"
+        >
+        vuex setting
         </nuxt-link>
       </li>
     </ul>
