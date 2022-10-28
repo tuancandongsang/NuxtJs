@@ -26,7 +26,7 @@ export default {
     }, 1000);
   },
   created() {
-    console.log(this.$route.params.vuex);
+    // console.log(this.$route.params.vuex);
   },
   data() {
     return {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1> Sider Bar</h1>
+    <h1> {{$t("common.sider")}} Bar</h1>
     <ul>
       <li><nuxt-link to="/">SSR_CSR</nuxt-link></li>
       <li><nuxt-link to="/structure">Structure</nuxt-link></li>
