@@ -12,6 +12,7 @@
       <li><nuxt-link to="/meta">Meta Tags vs SEO</nuxt-link></li>
       <li><nuxt-link to="/custom-loading">Custom loading</nuxt-link></li>
       <li><nuxt-link to="/vuex">VueX</nuxt-link></li>
+      <li><nuxt-link to="/cors">CORS</nuxt-link></li>
       <li><nuxt-link to="/error">error</nuxt-link></li>
     </ul>
   </div>
