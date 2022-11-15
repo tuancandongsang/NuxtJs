@@ -31,6 +31,7 @@ export default {
   plugins: [
     { src: "~/plugins/vue-notifycation.js", mode: "client" },
     "~/plugins/hello.js",
+    {src: '~/plugins/chart.js', mode: 'client'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

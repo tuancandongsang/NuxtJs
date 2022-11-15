@@ -14,6 +14,9 @@
       <li><nuxt-link to="/vuex">VueX</nuxt-link></li>
       <li><nuxt-link to="/cors">CORS</nuxt-link></li>
       <li><nuxt-link to="/lodasd">Lodasd</nuxt-link></li>
+      <li><nuxt-link to="/env">Env</nuxt-link></li>
+      <li><nuxt-link to="/vue-chartjs">Vue-Chartjs</nuxt-link></li>
+
       <li><nuxt-link to="/error">error</nuxt-link></li>
     </ul>
   </div>
