@@ -1,5 +1,5 @@
 <template>
-  <Bubble
+  <Scatter
     :chart-options="chartOptions"
     :chart-data="chartData"
     :chart-id="chartId"
@@ -11,30 +11,40 @@
     :height="height"
   />
 </template>
-
-<script>
-import { Bubble } from "vue-chartjs/legacy";
+  
+  <script>
+import { Scatter } from "vue-chartjs/legacy";
 
 import {
   Chart as ChartJS,
   Title,
   Tooltip,
   Legend,
+  LineElement,
+  CategoryScale,
   PointElement,
   LinearScale,
 } from "chart.js";
 
-ChartJS.register(Title, Tooltip, Legend, PointElement, LinearScale);
+ChartJS.register(
+  Title,
+  Tooltip,
+  Legend,
+  LineElement,
+  CategoryScale,
+  PointElement,
+  LinearScale
+);
 
 export default {
-  name: "BubbleChart",
+  name: "ScatterChart",
   components: {
-    Bubble,
+    Scatter,
   },
   props: {
     chartId: {
       type: String,
-      default: "bubble-chart",
+      default: "scatter-chart",
     },
     datasetIdKey: {
       type: String,
@@ -66,44 +76,58 @@ export default {
       chartData: {
         datasets: [
           {
-            label: "Data One",
+            label: "Scatter Dataset 1",
+            fill: false,
+            borderColor: "#f87979",
             backgroundColor: "#f87979",
             data: [
               {
-                x: 20,
-                y: 25,
-                r: 5,
+                x: -2,
+                y: 4,
               },
               {
-                x: 40,
-                y: 10,
-                r: 10,
+                x: -1,
+                y: 1,
               },
               {
-                x: 30,
-                y: 22,
-                r: 30,
+                x: 0,
+                y: 0,
+              },
+              {
+                x: 1,
+                y: 1,
+              },
+              {
+                x: 2,
+                y: 4,
               },
             ],
           },
           {
-            label: "Data Two",
-            backgroundColor: "#7C8CF8",
+            label: "Scatter Dataset 2",
+            fill: false,
+            borderColor: "#7acbf9",
+            backgroundColor: "#7acbf9",
             data: [
               {
-                x: 10,
-                y: 30,
-                r: 15,
+                x: -2,
+                y: -4,
               },
               {
-                x: 20,
-                y: 20,
-                r: 10,
+                x: -1,
+                y: -1,
               },
               {
-                x: 15,
-                y: 8,
-                r: 30,
+                x: 0,
+                y: 1,
+              },
+              {
+                x: 1,
+                y: -1,
+              },
+              {
+                x: 2,
+                y: -4,
               },
             ],
           },
@@ -117,3 +141,4 @@ export default {
   },
 };
 </script>
+  

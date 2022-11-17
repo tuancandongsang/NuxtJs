@@ -1,5 +1,5 @@
 <template>
-  <Bubble
+  <LineChartGenerator
     :chart-options="chartOptions"
     :chart-data="chartData"
     :chart-id="chartId"
@@ -11,30 +11,40 @@
     :height="height"
   />
 </template>
-
-<script>
-import { Bubble } from "vue-chartjs/legacy";
+  
+  <script>
+import { Line as LineChartGenerator } from "vue-chartjs/legacy";
 
 import {
   Chart as ChartJS,
   Title,
   Tooltip,
   Legend,
-  PointElement,
+  LineElement,
   LinearScale,
+  CategoryScale,
+  PointElement,
 } from "chart.js";
 
-ChartJS.register(Title, Tooltip, Legend, PointElement, LinearScale);
+ChartJS.register(
+  Title,
+  Tooltip,
+  Legend,
+  LineElement,
+  LinearScale,
+  CategoryScale,
+  PointElement
+);
 
 export default {
-  name: "BubbleChart",
+  name: "LineChart",
   components: {
-    Bubble,
+    LineChartGenerator,
   },
   props: {
     chartId: {
       type: String,
-      default: "bubble-chart",
+      default: "line-chart",
     },
     datasetIdKey: {
       type: String,
@@ -42,7 +52,7 @@ export default {
     },
     width: {
       type: Number,
-      default: 400,
+      default: 500,
     },
     height: {
       type: Number,
@@ -64,48 +74,20 @@ export default {
   data() {
     return {
       chartData: {
+        labels: [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+        ],
         datasets: [
           {
             label: "Data One",
             backgroundColor: "#f87979",
-            data: [
-              {
-                x: 20,
-                y: 25,
-                r: 5,
-              },
-              {
-                x: 40,
-                y: 10,
-                r: 10,
-              },
-              {
-                x: 30,
-                y: 22,
-                r: 30,
-              },
-            ],
-          },
-          {
-            label: "Data Two",
-            backgroundColor: "#7C8CF8",
-            data: [
-              {
-                x: 10,
-                y: 30,
-                r: 15,
-              },
-              {
-                x: 20,
-                y: 20,
-                r: 10,
-              },
-              {
-                x: 15,
-                y: 8,
-                r: 30,
-              },
-            ],
+            data: [40, 39, 10, 40, 39, 80, 40],
           },
         ],
       },
@@ -117,3 +99,4 @@ export default {
   },
 };
 </script>
+  
