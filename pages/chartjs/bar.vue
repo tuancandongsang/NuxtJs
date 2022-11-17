@@ -1,12 +1,7 @@
 
 <template>
   <div class="container">
-    <Bar
-      v-if="loaded"
-      :chart-data="chartData"
-      :options="options"
-      :width="width"
-    />
+    <Bar v-if="loaded" :chart-data="chartData" :options="options" />
   </div>
 </template>
   
@@ -24,7 +19,7 @@ import {
 ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale);
 
 export default {
-  name: "alo",
+  name: "BarChart",
   components: { Bar },
   data: () => ({
     loaded: true,
@@ -38,12 +33,11 @@ export default {
           data: [30, 40, 25, 20, 17],
           backgroundColor: ["#f87979", "red", "green", "blue", "yellow"],
           borderWidth: 2,
-          borderColor: "tomato",
+          // borderColor: "tomato",
           hoverBorderColor: "brown",
         },
       ],
     },
-    width: "1000px",
 
     options: {
       title: {
@@ -74,7 +68,7 @@ export default {
   },
   methods: {
     tranfromdataID(arr) {
-      return arr.map((item) => item.id);
+      return arr.map((item) => item.id); 
     },
     tranfromdataName(arr) {
       return arr.map((item) => item.name);

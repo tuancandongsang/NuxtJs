@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Vue-ChartJs </h1>
     <h2>- là 1 thư viện vẽ biểu đồ, được build trên HTML5 canvas</h2>
     <p>
       <b>cài đặt: </b> yarn add vue-chartjs chart.js or npm install vue-chartjs chart.js --save <br>
@@ -42,9 +41,7 @@
         </div>
       </div>
     </div>
-
   </div>
-
 </template>
 
 <script>
@@ -109,10 +106,9 @@ export default {
     };
   },
 }
-
 </script>
 
-<style scoped>
+<style>
 .chart-container {
   display: flex;
 }

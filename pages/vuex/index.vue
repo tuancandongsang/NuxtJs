@@ -34,7 +34,7 @@
       <nuxt-child />
     </div>
     <ul>
-      <li>{{ JSON.stringify(posts) }}</li>
+      <li>{{ posts }}</li>
     </ul>
     <button v-on:click="handleAdd">add item</button>
     <h3>{{ name }}</h3>
